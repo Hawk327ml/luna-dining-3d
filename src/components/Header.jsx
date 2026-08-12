@@ -13,6 +13,9 @@ function Header({ bookedCount, availableCount }) {
             Pick a table in the interactive floor plan, then lock the booking —
             status persists in localStorage for demos.
           </p>
+          <p className="mt-2 text-sm text-base-content/45">
+            Wood = open · Gold = selected · Red = booked
+          </p>
           <a href="#floor" className="btn btn-primary mt-6">
             View floor plan
           </a>

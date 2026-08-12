@@ -105,6 +105,7 @@ function DiningTable({ table, isSelected, onSelect }) {
   return (
     <group
       position={table.position}
+      scale={hovered && !isBooked ? 1.04 : 1}
       onClick={handleClick}
       onPointerOver={(event) => {
         event.stopPropagation();
