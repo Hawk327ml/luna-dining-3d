@@ -3,7 +3,7 @@
 Interactive restaurant floor with **React Three Fiber**. Click a table, complete the booking form, and reservations persist in `localStorage`.
 
 **Portfolio:** https://hawk327ml.github.io/  
-**Live (GitHub Pages):** https://hawk327ml.github.io/luna-dining-3d/
+**Live:** https://luna-dining-3d.web.app · [GitHub Pages mirror](https://hawk327ml.github.io/luna-dining-3d/)
 
 ![Floor plan preview](docs/preview/floor-plan.png)
 
@@ -21,7 +21,7 @@ Interactive restaurant floor with **React Three Fiber**. Click a table, complete
 | UI | React 18, Tailwind, DaisyUI (`luna` theme) |
 | 3D | Three.js · `@react-three/fiber` · `@react-three/drei` |
 | Build | Vite (`base: './'`) |
-| Hosting | **GitHub Pages** (primary) |
+| Hosting | **Firebase** `luna-dining-3d` · GitHub Pages mirror |
 
 ## Local
 
@@ -37,18 +37,21 @@ npm run preview
 
 ## Deploy
 
-Push to `main` → Actions (`.github/workflows/deploy-pages.yml`) publishes Pages.
-
-### Firebase (optional, currently unused)
-
-`https://luna-dining-3d.web.app` is **not** the active Live (site may 404 until you deploy). If you use Firebase later:
+### Firebase Hosting (primary)
 
 ```bash
-firebase use daisy-c2db8
-firebase deploy --only hosting:luna
+npm run build
+firebase deploy --only hosting:luna --project daisy-c2db8
 ```
 
-**Never** run bare `firebase deploy`. Spot-check Rosemary / FocusSpace / Luna Live URLs after any multi-app Hosting change.
+**Never** run bare `firebase deploy`. After deploy, spot-check:
+- https://rosemary-care-notebook.web.app
+- https://focusspace-3d.web.app
+- https://luna-dining-3d.web.app
+
+### GitHub Pages (mirror)
+
+Push to `main` → Actions publishes https://hawk327ml.github.io/luna-dining-3d/
 
 ## Author
 
