@@ -9,30 +9,29 @@ function Header({ bookedCount, availableCount }) {
           <h1 className="mt-3 font-display text-5xl font-bold tracking-tight text-base-content sm:text-6xl">
             Luna Dining
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-7 text-base-content/65">
-            Pick a table in the interactive floor plan, then lock the booking —
-            status persists in localStorage for demos.
+          <p className="mt-4 max-w-xl text-base leading-7 text-base-content/70">
+            点桌选位 → 填表预订 · 状态保存在本机，演示可随时清空
           </p>
           <p className="mt-2 text-sm text-base-content/45">
-            Wood = open · Gold = selected · Red = booked
+            Tip: 木色空闲 · 金色已选 · 红色已订
           </p>
           <a href="#floor" className="btn btn-primary mt-6">
-            View floor plan
+            进入厅堂
           </a>
         </div>
 
         <div
           className="flex gap-6 animate-rise text-sm text-base-content/55"
           style={{ animationDelay: '0.1s' }}
-          aria-label="Table availability"
+          aria-label="桌位概况"
         >
           <div>
-            <span className="block uppercase tracking-[0.14em]">Available</span>
+            <span className="block uppercase tracking-[0.14em]">空闲</span>
             <strong className="mt-1 block font-display text-3xl text-primary">{availableCount}</strong>
           </div>
           <div className="w-px bg-base-300" aria-hidden="true" />
           <div>
-            <span className="block uppercase tracking-[0.14em]">Booked</span>
+            <span className="block uppercase tracking-[0.14em]">已订</span>
             <strong className="mt-1 block font-display text-3xl text-error">{bookedCount}</strong>
           </div>
         </div>

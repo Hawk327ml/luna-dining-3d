@@ -309,6 +309,8 @@ function SceneContent({ tables, selectedTableId, onTableSelect }) {
         makeDefault
         target={[0, 0.55, 0]}
         enablePan={false}
+        autoRotate
+        autoRotateSpeed={0.5}
         minDistance={5.5}
         maxDistance={11}
         minPolarAngle={0.45}
@@ -326,12 +328,12 @@ function RestaurantScene({ tables, selectedTableId, onTableSelect }) {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
             3D Layout
           </p>
-          <h2 className="font-display text-2xl font-bold text-base-content">Restaurant floor</h2>
+          <h2 className="font-display text-2xl font-bold text-base-content">餐厅厅堂</h2>
         </div>
         <div className="flex flex-wrap gap-2 text-xs font-medium">
-          <span className="badge border-0 bg-[#8b5a36] text-white">Available</span>
-          <span className="badge border-0 bg-[#f2b705] text-[#211f1c]">Selected</span>
-          <span className="badge border-0 bg-[#c14335] text-white">Booked</span>
+          <span className="badge border-0 bg-[#8b5a36] text-white">空闲</span>
+          <span className="badge border-0 bg-[#f2b705] text-[#211f1c]">已选</span>
+          <span className="badge border-0 bg-[#c14335] text-white">已订</span>
         </div>
       </div>
 

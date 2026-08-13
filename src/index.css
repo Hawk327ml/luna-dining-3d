@@ -17,7 +17,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
   background:
     radial-gradient(ellipse 70% 50% at 80% 0%, rgba(31, 107, 88, 0.28), transparent 55%),
     radial-gradient(ellipse 50% 40% at 10% 90%, rgba(201, 162, 39, 0.12), transparent 50%),
@@ -28,7 +28,7 @@ h1,
 h2,
 h3,
 .font-display {
-  font-family: Fraunces, ui-serif, Georgia, serif;
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
 }
 
 button,

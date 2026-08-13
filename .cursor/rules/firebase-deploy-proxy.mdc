@@ -1,0 +1,12 @@
+---
+description: Firebase deploy for Luna — Node proxy + hosting:luna only
+alwaysApply: true
+---
+
+# Luna Dining Firebase Deploy
+
+- Path: `Desktop\_hawk_repo_seeds\luna-dining-3d`
+- Only: `firebase deploy --only hosting:luna --project daisy-c2db8` (or `npm run deploy:hosting`)
+- Never bare `firebase deploy`
+- `deploy.ps1` sets v2rayN Node proxy (`127.0.0.1:10808` + `NODE_USE_ENV_PROXY=1`)
+- After deploy spot-check Luna + Rosemary + FocusSpace Live URLs
